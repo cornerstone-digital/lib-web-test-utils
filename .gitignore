@@ -5,3 +5,4 @@ node_modules
 _backup
 lib
 bin
+lerna-debug.log
