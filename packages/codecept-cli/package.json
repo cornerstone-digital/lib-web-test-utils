@@ -1,0 +1,31 @@
+{
+  "name": "@vfuk/codecept-cli",
+  "version": "0.0.1",
+  "main": "bin/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepublish": "yarn run build"
+  },
+  "bin": {
+    "codecept-cli": "./bin/index.js"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "dependencies": {
+    "@vfuk/image-snapshots": "^0.0.1",
+    "codeceptjs": "1.3.1",
+    "commander": "2.16.0",
+    "shelljs": "0.8.2"
+  },
+  "peerDependencies": {
+    "codeceptjs": ">=1.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "10.5.2",
+    "@types/puppeteer": "1.5.0",
+    "@types/shelljs": "0.8.0",
+    "typescript": "2.9.2"
+  }
+}

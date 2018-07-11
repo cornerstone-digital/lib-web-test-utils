@@ -1,0 +1,10 @@
+{
+  "name": "@vfuk/test-utils",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublish": "yarn build"
+  }
+}

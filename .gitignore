@@ -1,0 +1,4 @@
+.vs
+.sonarlint
+node_modules
+_backup

@@ -1,0 +1,5 @@
+{
+  "standard.enable": false,
+  "stylelint.enable": false,
+  "tslint.enable": true
+}
