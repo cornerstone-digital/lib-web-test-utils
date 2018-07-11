@@ -12,6 +12,7 @@ cli
   .option('-s, --steps', 'Runs tests with steps printed')
   .option('-d, --debug', 'Run tests in debug mode')
   .option('-r, --reporter', 'Runs test with selected Mocha reporter')
+  .option('-vb, --verbose', 'Runs in verbose mode')
   .parse(process.argv)
 
 let shellCMDArray: string[] = ['codeceptjs run']
@@ -38,6 +39,10 @@ if (cli.steps !== undefined) {
 
 if (cli.debug !== undefined) {
   shellCMDArray.push('--debug')
+}
+
+if (cli.verbose !== undefined) {
+  shellCMDArray.push('--verbose')
 }
 
 const shellCommand: string = shellCMDArray.join(' ')

@@ -5,7 +5,6 @@
     "target": "es6",
     "module": "commonjs",
     "moduleResolution": "node",
-    "declaration": true,
     "sourceMap": true,
     "strict": true,
     "allowSyntheticDefaultImports": true,
@@ -21,7 +20,6 @@
     "outDir": "./bin"
   },
   "exclude": [
-    "./node_modules",
-    "./bin"
+    "./node_modules"
   ]
 }

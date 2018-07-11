@@ -4,7 +4,7 @@
   "main": "bin/index.js",
   "license": "MIT",
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "build": "tsc -p tsconfig.json",
     "prepublish": "yarn run build"
   },
   "bin": {

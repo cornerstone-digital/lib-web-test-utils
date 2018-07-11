@@ -17,12 +17,12 @@
 12 silly getExecOpts { cwd: '/Users/martinegan/development/external/vodafone/lib-web-test-utils/packages/test-helpers' }
 13 silly runScriptInDir build [] test-utils
 14 silly getExecOpts { cwd: '/Users/martinegan/development/external/vodafone/lib-web-test-utils/packages/test-utils' }
-15 error build Errored while running script in '@vfuk/test-utils'
+15 error build Errored while running script in '@vfuk/test-helpers'
 16 error execute callback with error
 17 error Error: Command failed: yarn run build
 17 error error Command failed with exit code 1.
 17 error $ tsc -p tsconfig.build.json
-17 error error TS5055: Cannot write file '/Users/martinegan/development/external/vodafone/lib-web-test-utils/packages/test-utils/lib/index.d.ts' because it would overwrite input file.
+17 error error TS5058: The specified path does not exist: 'tsconfig.build.json'.
 17 error info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 17 error
 17 error     at Promise.all.then.arr (/Users/martinegan/development/external/vodafone/lib-web-test-utils/node_modules/execa/index.js:236:11)

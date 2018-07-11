@@ -1,7 +1,6 @@
 {
   "extends": "tslint-config-standard",
   "rules": {
-    "no-bitwise": false,
-    "await-promise": false
+    "no-bitwise": false
   }
 }
