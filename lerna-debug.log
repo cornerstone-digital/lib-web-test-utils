@@ -1,8 +1,8 @@
-0 silly input [ 'build' ]
+0 silly input [ 'test' ]
 1 silly flags { _: [ 'run' ],
 1 silly flags   'reject-cycles': false,
 1 silly flags   rejectCycles: false,
-1 silly flags   script: 'build',
+1 silly flags   script: 'test',
 1 silly flags   args: [] }
 2 verbose rootPath /Users/martinegan/development/external/vodafone/lib-web-test-utils
 3 info version 2.11.0
@@ -11,19 +11,26 @@
 6 silly initialize attempt
 7 silly initialize success
 8 silly execute attempt
-9 silly runScriptInDir build [] image-snapshots
-10 silly getExecOpts { cwd: '/Users/martinegan/development/external/vodafone/lib-web-test-utils/packages/image-snapshots' }
-11 silly runScriptInDir build [] test-helpers
-12 silly getExecOpts { cwd: '/Users/martinegan/development/external/vodafone/lib-web-test-utils/packages/test-helpers' }
-13 silly runScriptInDir build [] test-utils
-14 silly getExecOpts { cwd: '/Users/martinegan/development/external/vodafone/lib-web-test-utils/packages/test-utils' }
-15 error build Errored while running script in '@vfuk/test-helpers'
-16 error execute callback with error
-17 error Error: Command failed: yarn run build
-17 error error Command failed with exit code 1.
-17 error $ tsc -p tsconfig.build.json
-17 error error TS5058: The specified path does not exist: 'tsconfig.build.json'.
-17 error info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
-17 error
-17 error     at Promise.all.then.arr (/Users/martinegan/development/external/vodafone/lib-web-test-utils/node_modules/execa/index.js:236:11)
-17 error     at <anonymous>
+9 silly runScriptInDir test [] codecept-cli
+10 silly getExecOpts { cwd: '/Users/martinegan/development/external/vodafone/lib-web-test-utils/packages/codecept-cli' }
+11 error test Errored while running script in '@vfuk/codecept-cli'
+12 error execute callback with error
+13 error Error: Command failed: yarn run test
+13 error FAIL src/index.test.js
+13 error   ● Test suite failed to run
+13 error
+13 error     Your test suite must contain at least one test.
+13 error
+13 error       at ../../node_modules/jest-cli/build/test_scheduler.js:246:22
+13 error
+13 error Test Suites: 1 failed, 1 total
+13 error Tests:       0 total
+13 error Snapshots:   0 total
+13 error Time:        3.219s
+13 error Ran all test suites.
+13 error error Command failed with exit code 1.
+13 error $ jest
+13 error info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+13 error
+13 error     at Promise.all.then.arr (/Users/martinegan/development/external/vodafone/lib-web-test-utils/node_modules/execa/index.js:236:11)
+13 error     at <anonymous>

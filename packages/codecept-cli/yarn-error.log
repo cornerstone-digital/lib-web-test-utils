@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /Users/martinegan/.yarn/bin/yarn.js add @types/expect --dev
+  /usr/local/bin/node /Users/martinegan/.yarn/bin/yarn.js add jest --dev
 
 PATH: 
   /Users/martinegan/.sonar-scanner/:/Users/martinegan/.yarn/bin:/Users/martinegan/.config/yarn/global/node_modules/.bin:/Users/martinegan/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/martinegan/.sonar-scanner/:/Users/martinegan/.yarn/bin:/Users/martinegan/.config/yarn/global/node_modules/.bin:/Users/martinegan/bin
@@ -30,14 +30,15 @@ npm manifest:
   {
     "name": "@vfuk/codecept-cli",
     "version": "0.0.1",
-    "main": "lib/index.js",
+    "main": "bin/index.js",
     "license": "MIT",
     "scripts": {
-      "build": "tsc -p tsconfig.build.json",
+      "test": "jest",
+      "build": "tsc -p tsconfig.json",
       "prepublish": "yarn run build"
     },
     "bin": {
-      "codecept-cli": "./src/index.js"
+      "codecept-cli": "./bin/index.js"
     },
     "engines": {
       "node": ">= 8"
