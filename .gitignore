@@ -1,5 +1,6 @@
 .vs
 .sonarlint
+.vscode
 node_modules
 _backup
 lib
