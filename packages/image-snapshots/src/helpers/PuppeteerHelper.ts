@@ -261,7 +261,7 @@ class PuppeteerHelper extends Helper {
     return result
   }
 
-  async expectScreenshotToMatch (viewport: any, fileName: string): Promise<expect.Expectation<boolean>> {
+  async expectScreenshotToMatch (viewport: any, fileName: string) {
     await this.page.setViewport(viewport)
 
     const clientHeight: number = await this.page.evaluate(() => {
