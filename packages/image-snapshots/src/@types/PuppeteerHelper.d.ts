@@ -16,7 +16,8 @@ interface ICodeceptTest {
 }
 
 interface ISnapshotConfig {
-  snapshotsDir: string
+  snapshotsDir: string,
+  updateSnapshots: boolean
 }
 
 interface ISnapshotState {

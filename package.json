@@ -1,4 +1,6 @@
 {
+  "name": "lib-web-test-utils",
+  "version": "0.0.1",
   "private": true,
   "repository": "ssh://vfuk-digital@vs-ssh.visualstudio.com:22/Digital/_ssh/lib-web-test-utils",
   "author": "Martin Egan <martingegan@gmail.com>",

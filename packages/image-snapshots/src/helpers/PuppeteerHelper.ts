@@ -15,7 +15,7 @@ class PuppeteerHelper extends Helper {
   currentTest: ICodeceptTest
   SnapshotState: ISnapshotState
 
-  constructor (config: any = {}) {
+  constructor (config: ISnapshotConfig) {
     super(config)
     this.config = config
     this.SnapshotState = {
@@ -97,7 +97,7 @@ class PuppeteerHelper extends Helper {
 
   diffImageToScreenshot (screenshot: Buffer, fileName: string) {
     let result: ISnapshotResult
-    const currentTest = this.currentTest
+    const currentTest: ICodeceptTest = this.currentTest
     const folderName: string = currentTest.title
       .toLowerCase()
       .split(' ')
@@ -216,7 +216,7 @@ class PuppeteerHelper extends Helper {
 
       if (!pass) {
         mkdirp.sync(outputDir)
-        const compositeResultImage = new PNG({
+        const compositeResultImage: PNG = new PNG({
           width: imageWidth * 3,
           height: imageHeight
         })
@@ -261,7 +261,7 @@ class PuppeteerHelper extends Helper {
     return result
   }
 
-  async expectScreenshotToMatch (viewport: any, fileName: string) {
+  async expectScreenshotToMatch (viewport: any, fileName: string): Promise<expect.Expectation<boolean>> {
     await this.page.setViewport(viewport)
 
     const clientHeight: number = await this.page.evaluate(() => {
