@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "lib": ["es6", "dom"],
+    "target": "es5",
+    "moduleResolution": "node",
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "strict": true,
+    "outDir": "./compiled",
+    "baseUrl": "./",
+    "paths": {
+      "@root/*": ["./*"],
+      "@config/*": ["./config/*"],
+      "@cli/*": ["./package/e2e-cli/*"],
+      "@helpers/*": ["./package/helpers/*"]
+    },
+    "types": [
+      "node",
+      "jasmine"
+    ]
+  },
+  "exclude": [
+    "./node_modules",
+    "./lib"
+  ],
+  "include": [
+    "./config/**/*.ts",
+    "./package/**/*.ts"
+  ]
+}
