@@ -13,8 +13,7 @@
     "compile:copy": "ncp ./package.json ./build/package.json && ncp .npmrc ./build/.npmrc",
     "build": "npm-run-all compile:*",
     "test": "jest",
-    "dev": "node ./build/lib/e2e-cli.js run",
-    "sonar:up": "docker-compose -f ./package/sonar/docker-compose.yml up sonarqube"
+    "dev": "node ./build/lib/e2e-cli.js run"
   },
   "dependencies": {
     "codeceptjs": "1.4.2",

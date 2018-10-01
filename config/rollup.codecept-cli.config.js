@@ -3,9 +3,10 @@ import tsConfigPaths from 'rollup-plugin-ts-paths'
 
 export default {
   input: './package/e2e-cli/index.ts',
+  banner: '#!/usr/local/bin/node',
   output: {
     name: 'e2e-cli',
-    file: 'lib/e2e-cli.js',
+    file: './build/lib/e2e-cli.js',
     format: 'cjs'
   },
   watch: {
