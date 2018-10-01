@@ -1,0 +1,10 @@
+.vs
+.sonarlint
+.vscode
+node_modules
+_backup
+lib
+bin
+lerna-debug.log
+yarn-error.log
+.docker/*
