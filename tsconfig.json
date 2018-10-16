@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "lib": ["es6", "dom"],
+    "module": "commonjs",
+    "target": "es6",
+    "declaration": true,
+    "declarationDir": "./lib/types",
+    "declarationMap": true,
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "stripInternal": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@shared/*": ["./shared/*"],
+      "@codecept/*": ["./codecept/*"]
+    }
+  },
+  "exclude": [
+    "./node_modules",
+    "./lib"
+  ],
+  "include": [
+    "./src/**/*.ts"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "commander": "2.18.0",
+    "debug": "4.0.1"
+  },
+  "scripts": {
+    "compile": "tsc"
+  },
+  "devDependencies": {
+    "@types/debug": "0.0.30",
+    "jest": "23.6.0",
+    "rollup-plugin-ts-paths": "1.0.1",
+    "rollup-typescript": "1.2.0"
+  }
+}
